@@ -1,0 +1,53 @@
+[gd_resource type="Theme" format=3 uid="uid://mr7iaxaqttda"]
+
+[ext_resource type="FontFile" uid="uid://c78arc6r1wxo1" path="res://Content/Themes/Fonts/linux_libertine/LinLibertine_RB.ttf" id="1_d4e3x"]
+[ext_resource type="FontFile" uid="uid://gg8cign0uax" path="res://Content/Themes/Fonts/just_sans/JUST Sans Regular.otf" id="1_qnitj"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wyvfx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4e3x"]
+bg_color = Color(0.12941177, 0.12941177, 0.12941177, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+corner_detail = 9
+expand_margin_left = 4.0
+expand_margin_right = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tmam6"]
+bg_color = Color(0.3019608, 0.3019608, 0.3019608, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+corner_detail = 9
+expand_margin_left = 4.0
+expand_margin_right = 6.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyvfx"]
+bg_color = Color(0.20784314, 0.20784314, 0.20784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnitj"]
+bg_color = Color(0.078431375, 0.078431375, 0.078431375, 1)
+
+[resource]
+Button/constants/h_separation = 4
+Button/font_sizes/font_size = 10
+Button/fonts/font = null
+Label/font_sizes/font_size = 18
+Label/fonts/font = ExtResource("1_d4e3x")
+LineEdit/font_sizes/font_size = 13
+LineEdit/icons/clear = SubResource("CompressedTexture2D_wyvfx")
+LineEdit/styles/focus = SubResource("StyleBoxFlat_d4e3x")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_tmam6")
+LineEdit/styles/read_only = null
+MarginContainer/constants/margin_bottom = 2
+MarginContainer/constants/margin_left = 2
+MarginContainer/constants/margin_right = 2
+MarginContainer/constants/margin_top = 2
+MenuButton/fonts/font = ExtResource("1_qnitj")
+Panel/styles/panel = SubResource("StyleBoxFlat_wyvfx")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_qnitj")
+PopupMenu/fonts/font = ExtResource("1_qnitj")
+VBoxContainer/constants/separation = 0

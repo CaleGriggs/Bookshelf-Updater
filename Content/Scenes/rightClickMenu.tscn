@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bm8d213ubcji0"]
+
+[ext_resource type="Theme" uid="uid://cln8hhfvxkrqr" path="res://Content/Themes/RightClickThemes/RightClickMenuTheme.tres" id="1_f8g8l"]
+[ext_resource type="Script" uid="uid://cprsnywoskocm" path="res://Content/Scripts/right_click_menu.gd" id="1_l5577"]
+
+[node name="RightClickMenuControl" type="Control" unique_id=660357644]
+custom_minimum_size = Vector2(150, 80.735)
+custom_maximum_size = Vector2(175, 200)
+propagate_maximum_size = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 150.0
+offset_bottom = 80.735
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("1_f8g8l")
+script = ExtResource("1_l5577")
+
+[node name="Panel" type="Panel" parent="." unique_id=1441623383]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1829339970]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_f8g8l")
+
+[node name="Edit" type="Button" parent="Panel/VBoxContainer" unique_id=2096771550]
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("1_f8g8l")
+text = "Edit..."
+alignment = 0
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer" unique_id=2037788625]
+layout_mode = 2
+text = "Delete"
+alignment = 0
+
+[connection signal="button_up" from="Panel/VBoxContainer/Edit" to="." method="_on_Edit"]
+[connection signal="button_up" from="Panel/VBoxContainer/Button" to="." method="_on_delete"]

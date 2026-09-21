@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://cbuxtyat3wjih"]
+
+[ext_resource type="Script" uid="uid://nogln7xfvhmf" path="res://Content/Scripts/card.gd" id="1_gjhby"]
+[ext_resource type="Theme" uid="uid://twh7dt3qhslp" path="res://Content/Themes/CardThemes/CardTheme.tres" id="2_gjhby"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gjhby"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_jee13"]
+TooltipLabel/colors/font_color = Color(0.8046875, 0.79211426, 0, 1)
+TooltipPanel/styles/panel = SubResource("StyleBoxFlat_gjhby")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gjhby"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8rgg"]
+bg_color = Color(0.69411767, 0.09803922, 0.09803922, 0)
+
+[sub_resource type="Theme" id="Theme_gjhby"]
+Panel/styles/panel = SubResource("StyleBoxFlat_t8rgg")
+
+[node name="Card" type="MarginContainer" unique_id=62636837]
+anchor_right = 0.2
+anchor_bottom = 0.21300001
+offset_right = -0.40000916
+offset_bottom = -4.024002
+theme = ExtResource("2_gjhby")
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 1
+script = ExtResource("1_gjhby")
+
+[node name="CardBG" type="Panel" parent="." unique_id=2060640278]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(126.99, 134)
+custom_maximum_size = Vector2(-1, 134)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_gjhby")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CardBG" unique_id=1129649921]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0040001
+anchor_bottom = 1.0
+offset_right = -0.90802
+
+[node name="CoverContainer" type="PanelContainer" parent="CardBG/HBoxContainer" unique_id=935435656]
+custom_minimum_size = Vector2(81.99, 0)
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Control" type="Control" parent="CardBG/HBoxContainer/CoverContainer" unique_id=558912444]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CardBG/HBoxContainer/CoverContainer/Control" unique_id=65163723]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -11.5
+offset_right = 76.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.7853982
+scale = Vector2(0.38, 0.38)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+text = "COVER IMAGE HERE"
+
+[node name="CoverTexture" type="TextureButton" parent="CardBG/HBoxContainer/CoverContainer" unique_id=484279053]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(-1, 133)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_jee13")
+texture_normal = SubResource("CompressedTexture2D_gjhby")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CardBG/HBoxContainer" unique_id=557869532]
+custom_minimum_size = Vector2(141.145, 0)
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="Title" type="Label" parent="CardBG/HBoxContainer/VBoxContainer" unique_id=451175995]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 27)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 0
+focus_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "hgfiuyouygiugoiugouyoghugoufoufouyf"
+clip_text = true
+text_overrun_behavior = 5
+text_direction = 1
+
+[node name="Author" type="Label" parent="CardBG/HBoxContainer/VBoxContainer" unique_id=151044305]
+unique_name_in_owner = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 0
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -2.32)
+theme_override_font_sizes/font_size = 16
+text = "By:"
+clip_text = true
+text_overrun_behavior = 5
+
+[node name="Released" type="Label" parent="CardBG/HBoxContainer/VBoxContainer" unique_id=65637352]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 19.795)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 0
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0, -0.22)
+theme_override_font_sizes/font_size = 14
+text = "Released: "
+clip_text = true
+text_overrun_behavior = 5
+
+[node name="ISBN" type="Label" parent="CardBG/HBoxContainer/VBoxContainer" unique_id=1610031056]
+unique_name_in_owner = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 0
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -8.35)
+theme_override_font_sizes/font_size = 14
+text = "ISBN: "
+clip_text = true
+text_overrun_behavior = 5
+
+[node name="BookType" type="Label" parent="CardBG/HBoxContainer/VBoxContainer" unique_id=1051187072]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 21.445)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 0
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 0.44)
+theme_override_font_sizes/font_size = 14
+text = "Book Type: "
+clip_text = true
+text_overrun_behavior = 5
+
+[node name="RatingFinished" type="RichTextLabel" parent="CardBG/HBoxContainer/VBoxContainer" unique_id=838304436]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 20.985)
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_vertical = 0
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -2.63)
+scroll_active = false
+
+[node name="Control" type="Panel" parent="CardBG" unique_id=1492647210]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 1
+theme = SubResource("Theme_gjhby")
+
+[connection signal="button_up" from="CardBG/HBoxContainer/CoverContainer/CoverTexture" to="." method="_on_cover_button_up"]
+[connection signal="gui_input" from="CardBG/Control" to="." method="_on_gui_input"]

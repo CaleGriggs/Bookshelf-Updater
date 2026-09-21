@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bf1v31u83730q"]
+
+[ext_resource type="Theme" uid="uid://dth2j5gd3kavv" path="res://Content/Themes/NewBookThemes/NewBookTheme.tres" id="1_h8edy"]
+[ext_resource type="Script" uid="uid://bpqydh1vpy2sr" path="res://Content/Scripts/confirm_win.gd" id="2_h8edy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qyn8n"]
+bg_color = Color(0.06640625, 0.06640625, 0.06640625, 0.4509804)
+
+[node name="SaveCloseMenu" type="Control" unique_id=472843314]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_h8edy")
+script = ExtResource("2_h8edy")
+
+[node name="Panel" type="Panel" parent="." unique_id=1702728655]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qyn8n")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1822638341]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="CenterContainer" unique_id=1561015143]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="CenterContainer/AspectRatioContainer" unique_id=981724287]
+custom_minimum_size = Vector2(451.76, 139.165)
+layout_mode = 2
+theme = ExtResource("1_h8edy")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/AspectRatioContainer" unique_id=1362144112]
+layout_mode = 2
+
+[node name="VSplitContainer" type="VSplitContainer" parent="CenterContainer/AspectRatioContainer/VBoxContainer" unique_id=1762708300]
+custom_minimum_size = Vector2(0, 30.64)
+layout_mode = 2
+
+[node name="MessageLabel" type="Label" parent="CenterContainer/AspectRatioContainer/VBoxContainer" unique_id=1827632732]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("1_h8edy")
+theme_override_font_sizes/font_size = 18
+text = "Default Message"
+horizontal_alignment = 1
+
+[node name="VSplitContainer2" type="VSplitContainer" parent="CenterContainer/AspectRatioContainer/VBoxContainer" unique_id=1397665484]
+custom_minimum_size = Vector2(0, 25.01)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/AspectRatioContainer/VBoxContainer" unique_id=1104835948]
+layout_mode = 2
+alignment = 1
+
+[node name="YesButton" type="Button" parent="CenterContainer/AspectRatioContainer/VBoxContainer/HBoxContainer" unique_id=1657042028]
+custom_minimum_size = Vector2(31.77, 0)
+layout_mode = 2
+theme = ExtResource("1_h8edy")
+text = "Yes"
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="CenterContainer/AspectRatioContainer/VBoxContainer/HBoxContainer" unique_id=1167932817]
+custom_minimum_size = Vector2(149.215, 0)
+layout_mode = 2
+
+[node name="NoButton" type="Button" parent="CenterContainer/AspectRatioContainer/VBoxContainer/HBoxContainer" unique_id=1131031910]
+custom_minimum_size = Vector2(31, 0)
+layout_mode = 2
+theme = ExtResource("1_h8edy")
+text = "No"
+
+[connection signal="button_up" from="CenterContainer/AspectRatioContainer/VBoxContainer/HBoxContainer/YesButton" to="." method="_on_Yes"]
+[connection signal="button_up" from="CenterContainer/AspectRatioContainer/VBoxContainer/HBoxContainer/NoButton" to="." method="_on_No"]

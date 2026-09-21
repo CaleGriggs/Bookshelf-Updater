@@ -1,0 +1,12 @@
+[gd_resource type="Theme" format=3 uid="uid://cln8hhfvxkrqr"]
+
+[ext_resource type="FontFile" uid="uid://gg8cign0uax" path="res://Content/Themes/Fonts/just_sans/JUST Sans Regular.otf" id="1_082i3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggelw"]
+bg_color = Color(0.13671875, 0.13671875, 0.13671875, 1)
+
+[resource]
+Button/fonts/font = ExtResource("1_082i3")
+MenuButton/fonts/font = ExtResource("1_082i3")
+Panel/styles/panel = SubResource("StyleBoxFlat_ggelw")
+PopupMenu/fonts/font = ExtResource("1_082i3")

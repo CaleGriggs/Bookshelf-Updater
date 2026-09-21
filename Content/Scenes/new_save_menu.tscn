@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://bust4awwjtl5l"]
+
+[ext_resource type="Theme" uid="uid://dth2j5gd3kavv" path="res://Content/Themes/NewBookThemes/NewBookTheme.tres" id="1_ta7ow"]
+[ext_resource type="Script" uid="uid://cwtqm5bjoq2ll" path="res://Content/Scripts/new_save_menu.gd" id="2_dl0md"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qyn8n"]
+bg_color = Color(0.06640625, 0.06640625, 0.06640625, 0.4509804)
+
+[node name="NewSaveMenu" type="Control" unique_id=472843314]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ta7ow")
+script = ExtResource("2_dl0md")
+
+[node name="Panel" type="Panel" parent="." unique_id=1702728655]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qyn8n")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1822638341]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="CenterContainer" unique_id=1561015143]
+layout_mode = 2
+
+[node name="MainPanel" type="Panel" parent="CenterContainer/AspectRatioContainer" unique_id=981724287]
+custom_minimum_size = Vector2(470, 236.645)
+layout_mode = 2
+theme = ExtResource("1_ta7ow")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/AspectRatioContainer" unique_id=1104835948]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer" unique_id=221681806]
+layout_mode = 2
+
+[node name="TopSplitter" type="VSplitContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=909561667]
+custom_minimum_size = Vector2(0, 16.325)
+layout_mode = 2
+dragging_enabled = false
+dragger_visibility = 1
+
+[node name="Label" type="Label" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=467625588]
+layout_mode = 2
+theme = ExtResource("1_ta7ow")
+text = "Select save locations:"
+
+[node name="Label2" type="Label" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=902476590]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -7.135)
+theme = ExtResource("1_ta7ow")
+theme_override_font_sizes/font_size = 10
+text = "    * Must be within parent directory of Bookshelf Updater"
+
+[node name="TopSplitter2" type="VSplitContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=370267177]
+custom_minimum_size = Vector2(0, 10.55)
+layout_mode = 2
+dragging_enabled = false
+dragger_visibility = 1
+
+[node name="BookshelfHbox" type="HBoxContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=847107243]
+layout_mode = 2
+
+[node name="BookJSONSel" type="Button" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/BookshelfHbox" unique_id=1140841977]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(244, 0)
+custom_maximum_size = Vector2(244, -1)
+layout_mode = 2
+theme = ExtResource("1_ta7ow")
+text = "Select Bookshelf Location"
+alignment = 0
+text_overrun_behavior = 3
+clip_text = true
+
+[node name="HSplitContainer" type="HSplitContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/BookshelfHbox" unique_id=335767873]
+custom_minimum_size = Vector2(17.69, 0)
+layout_mode = 2
+
+[node name="BookLabel" type="Label" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/BookshelfHbox" unique_id=1957454040]
+layout_mode = 2
+theme = ExtResource("1_ta7ow")
+text = "Bookshelf.json"
+
+[node name="MiddleSplitter" type="VSplitContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=258778995]
+custom_minimum_size = Vector2(0, 18.93)
+layout_mode = 2
+dragging_enabled = false
+dragger_visibility = 1
+
+[node name="ImgsHbox" type="HBoxContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=1562822952]
+layout_mode = 2
+
+[node name="ImgsDirSel" type="Button" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/ImgsHbox" unique_id=1230357318]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(244, 0)
+custom_maximum_size = Vector2(244, -1)
+layout_mode = 2
+theme = ExtResource("1_ta7ow")
+text = "Select Images Location"
+alignment = 0
+clip_text = true
+
+[node name="HSplitContainer" type="HSplitContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/ImgsHbox" unique_id=907497998]
+custom_minimum_size = Vector2(17.69, 0)
+layout_mode = 2
+
+[node name="ImgsLabel" type="Label" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/ImgsHbox" unique_id=1875093098]
+layout_mode = 2
+theme = ExtResource("1_ta7ow")
+text = "Images Directory"
+
+[node name="BottomSplitter" type="VSplitContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=1854318561]
+custom_minimum_size = Vector2(0, 32.91)
+layout_mode = 2
+dragging_enabled = false
+dragger_visibility = 1
+
+[node name="SaveHbox" type="HBoxContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer" unique_id=130862825]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/SaveHbox" unique_id=2067435212]
+custom_minimum_size = Vector2(354.09, 0)
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/SaveHbox" unique_id=273091837]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("1_ta7ow")
+text = "Save"
+
+[connection signal="button_up" from="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/BookshelfHbox/BookJSONSel" to="." method="_on_location_button" flags=18]
+[connection signal="button_up" from="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/ImgsHbox/ImgsDirSel" to="." method="_on_location_button" flags=18]
+[connection signal="button_up" from="CenterContainer/AspectRatioContainer/HBoxContainer/VBoxContainer/SaveHbox/SaveButton" to="." method="_on_save_button_button_up"]

@@ -1,0 +1,13 @@
+[gd_resource type="Theme" format=3 uid="uid://cjd6kyv8tes4v"]
+
+[ext_resource type="StyleBox" uid="uid://dcar0i5m4kqw0" path="res://Content/Themes/NewBookThemes/Special/fin_YN_hover.tres" id="1_5wbql"]
+[ext_resource type="StyleBox" uid="uid://nw6mfypbprsl" path="res://Content/Themes/NewBookThemes/Special/fin_YN_normal.tres" id="1_6fhfj"]
+[ext_resource type="StyleBox" uid="uid://bs25nb12j7jbw" path="res://Content/Themes/NewBookThemes/Special/fin_YN_pressed.tres" id="2_5wbql"]
+[ext_resource type="FontFile" uid="uid://gg8cign0uax" path="res://Content/Themes/Fonts/just_sans/JUST Sans Regular.otf" id="4_44ojm"]
+
+[resource]
+default_font = ExtResource("4_44ojm")
+Button/styles/hover = ExtResource("1_5wbql")
+Button/styles/normal = ExtResource("1_6fhfj")
+Button/styles/pressed = ExtResource("2_5wbql")
+Label/colors/font_color = Color(0.69921875, 0.69921875, 0.69921875, 1)

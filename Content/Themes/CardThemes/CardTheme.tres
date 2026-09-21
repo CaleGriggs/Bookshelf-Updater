@@ -1,0 +1,11 @@
+[gd_resource type="Theme" format=3 uid="uid://twh7dt3qhslp"]
+
+[ext_resource type="FontFile" uid="uid://gg8cign0uax" path="res://Content/Themes/Fonts/just_sans/JUST Sans Regular.otf" id="1_rxwtm"]
+[ext_resource type="StyleBox" uid="uid://1fl1t2wov48c" path="res://Content/Themes/CardThemes/StyleBoxs/CardRating.tres" id="2_rweiu"]
+[ext_resource type="FontFile" uid="uid://cyn6f7ahoqlco" path="res://Content/Themes/Fonts/just_sans/JUST Sans ExBold.otf" id="3_2g255"]
+
+[resource]
+Label/fonts/font = ExtResource("1_rxwtm")
+Panel/styles/panel = ExtResource("2_rweiu")
+RichTextLabel/fonts/bold_font = ExtResource("3_2g255")
+RichTextLabel/fonts/normal_font = ExtResource("1_rxwtm")

@@ -1,0 +1,42 @@
+[gd_resource type="Theme" format=3 uid="uid://dth2j5gd3kavv"]
+
+[ext_resource type="FontFile" uid="uid://gg8cign0uax" path="res://Content/Themes/Fonts/just_sans/JUST Sans Regular.otf" id="1_ekifk"]
+[ext_resource type="StyleBox" uid="uid://b5fxjjh46mu4k" path="res://Content/Themes/NewBookThemes/Styleboxes/Normal.tres" id="2_ul2bi"]
+[ext_resource type="StyleBox" uid="uid://u46rxrg38kk7" path="res://Content/Themes/NewBookThemes/Styleboxes/Pressed.tres" id="3_fekhx"]
+[ext_resource type="StyleBox" uid="uid://clmukbuyebv0i" path="res://Content/Themes/NewBookThemes/Styleboxes/Focus.tres" id="4_27r7m"]
+[ext_resource type="StyleBox" uid="uid://wchuhfv040j7" path="res://Content/Themes/NewBookThemes/Styleboxes/Hover.tres" id="5_r4v2f"]
+[ext_resource type="StyleBox" uid="uid://cn4kyuw51p75c" path="res://Content/Themes/NewBookThemes/Styleboxes/PanelTexture.tres" id="6_4q03b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8th8g"]
+bg_color = Color(0.11328125, 0.11328125, 0.11328125, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.21484375, 0.21484375, 0.21484375, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_qyv3g"]
+color = Color(0.4765625, 0.4765625, 0.4765625, 1)
+
+[resource]
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/fonts/font = ExtResource("1_ekifk")
+Button/styles/focus = ExtResource("4_27r7m")
+Button/styles/hover = ExtResource("5_r4v2f")
+Button/styles/normal = ExtResource("2_ul2bi")
+Button/styles/pressed = ExtResource("3_fekhx")
+Label/colors/font_color = Color(0.3828125, 0.3828125, 0.3828125, 1)
+Label/fonts/font = ExtResource("1_ekifk")
+LineEdit/fonts/font = ExtResource("1_ekifk")
+LineEdit/styles/focus = ExtResource("4_27r7m")
+LineEdit/styles/normal = ExtResource("2_ul2bi")
+MenuButton/fonts/font = ExtResource("1_ekifk")
+MenuButton/styles/focus = ExtResource("4_27r7m")
+MenuButton/styles/hover = ExtResource("5_r4v2f")
+MenuButton/styles/normal = ExtResource("2_ul2bi")
+MenuButton/styles/pressed = ExtResource("3_fekhx")
+Panel/styles/panel = ExtResource("6_4q03b")
+PopupMenu/fonts/font = ExtResource("1_ekifk")
+PopupMenu/styles/hover = ExtResource("5_r4v2f")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_8th8g")
+PopupMenu/styles/separator = SubResource("StyleBoxLine_qyv3g")

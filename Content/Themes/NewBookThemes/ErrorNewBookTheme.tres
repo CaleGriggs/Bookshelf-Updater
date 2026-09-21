@@ -1,0 +1,25 @@
+[gd_resource type="Theme" format=3 uid="uid://cyq7a4nv25nc0"]
+
+[ext_resource type="FontFile" uid="uid://gg8cign0uax" path="res://Content/Themes/Fonts/just_sans/JUST Sans Regular.otf" id="1_8rlas"]
+[ext_resource type="StyleBox" uid="uid://ba6kra1qlgn5s" path="res://Content/Themes/NewBookThemes/Styleboxes/ErrorFocus.tres" id="4_0j8n2"]
+[ext_resource type="StyleBox" uid="uid://ckfvkhysrxqss" path="res://Content/Themes/NewBookThemes/Styleboxes/ErrorNormal.tres" id="5_ccsda"]
+[ext_resource type="StyleBox" uid="uid://gd2pjrlxr6sp" path="res://Content/Themes/NewBookThemes/Styleboxes/ErrorHover.tres" id="6_8rlas"]
+[ext_resource type="StyleBox" uid="uid://dfkn6jwlyg38a" path="res://Content/Themes/NewBookThemes/Styleboxes/ErrorPressed.tres" id="7_vx2sp"]
+[ext_resource type="StyleBox" uid="uid://cn4kyuw51p75c" path="res://Content/Themes/NewBookThemes/Styleboxes/PanelTexture.tres" id="8_g630g"]
+
+[resource]
+Button/colors/font_color = Color(0.9607843, 0.13333334, 0.13333334, 0.7607843)
+Button/fonts/font = ExtResource("1_8rlas")
+Button/styles/hover = ExtResource("6_8rlas")
+Button/styles/normal = ExtResource("5_ccsda")
+Button/styles/pressed = ExtResource("7_vx2sp")
+LineEdit/colors/font_placeholder_color = Color(0.9607843, 0.13333334, 0.13333334, 0.7607843)
+LineEdit/fonts/font = ExtResource("1_8rlas")
+LineEdit/styles/focus = ExtResource("4_0j8n2")
+LineEdit/styles/normal = ExtResource("5_ccsda")
+MenuButton/fonts/font = ExtResource("1_8rlas")
+MenuButton/styles/focus = ExtResource("4_0j8n2")
+MenuButton/styles/hover = ExtResource("6_8rlas")
+MenuButton/styles/normal = ExtResource("5_ccsda")
+MenuButton/styles/pressed = ExtResource("7_vx2sp")
+Panel/styles/panel = ExtResource("8_g630g")
