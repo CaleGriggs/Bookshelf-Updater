@@ -13,6 +13,9 @@ config_version=5
 config/name="Bookshelf Updater"
 run/main_scene="uid://78767af5h4do"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+run/max_fps=60
+run/low_processor_mode=true
+boot_splash/image="uid://bqw7blydc7ewv"
 config/icon="uid://bqw7blydc7ewv"
 
 [display]
