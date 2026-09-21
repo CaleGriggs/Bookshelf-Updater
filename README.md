@@ -12,7 +12,7 @@ Creates a bookshelf.json file structured as {"current":\[], "up-next":\[], "comp
 
 ## Example of a populated Bookshelf:
 
-[Example Bookshelf](https://github.com/CaleGriggs/Bookshelf-Updater/blob/main/examples/Example%20with%20books.jpg)
+![Example Bookshelf](https://github.com/CaleGriggs/Bookshelf-Updater/blob/main/examples/Example%20with%20books.jpg)
 
 
 More images [here](https://github.com/CaleGriggs/Bookshelf-Updater/tree/main/examples)
